@@ -1,0 +1,5 @@
+{
+  "pathToDataSetCsv": "../datasets/9/behavior/1/6.csv",
+  "videoPath": "../datasets/9/vids/bl6DLC_resnet50_exp7Feb16shuffle1_1030000_labeled.mp4",
+  "desiredLikelihood": 0.9
+}
