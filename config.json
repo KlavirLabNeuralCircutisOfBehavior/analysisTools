@@ -1,5 +1,7 @@
 {
-  "pathToDataSetCsv": "../datasets/9/behavior/1/6.csv",
-  "videoPath": "../datasets/9/vids/bl6DLC_resnet50_exp7Feb16shuffle1_1030000_labeled.mp4",
+  "pathToDataSetCsv": "/home/tzuk/Documents/psychology/datasets/exp9fullData/21_6DLC_resnet50_exp7Feb16shuffle1_1030000.csv",
+  "videoPath": "../datasets/9/vids/21_6DLC_resnet50_exp7Feb16shuffle1_1030000_labeled.mp4",
+  "saveResultsPath": "../datasets/results_week21_mice6.json",
+  "saveDictionaryPath": "../datasets/userDictionary_week21_mice6.json",
   "desiredLikelihood": 0.9
 }

@@ -15,5 +15,8 @@ class DataInFrame:
         self.classification = classification
 
     def __dict__(self):
-        return {'animal': self.animal.__dict__(), 'bug': self.bug.__dict__(), 'timeStamp': self.timeStamp,
-                'classification': self.classification}
+        if self.bug is not None:
+            return {'animal': self.animal.__dict__(), 'bug': self.bug.__dict__(), 'timeStamp': self.timeStamp,
+                    'classification': self.classification}
+        else:
+            return {'animal': self.animal.__dict__(), 'timeStamp': self.timeStamp, 'classification': self.classification}
