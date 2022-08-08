@@ -1,3 +1,5 @@
 {
-  "pathToJsonFile": "../datasets/results_week21_mice6.json"
+  "pathToJsonFiles": ["../datasets/results_week1_mice6.json","../datasets/results_week7_mice6.json","../datasets/results_week21_mice6.json"],
+  "pathToJsonsDir": "../datasets/exp9jsons/"
+
 }

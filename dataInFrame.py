@@ -20,9 +20,11 @@ class DataInFrame:
             self.animal) + " bug: " + str(self.bug)
 
     def __dict__(self):
+        result = {}
+        if self.animal is not None:
+            result['animal'] = self.animal.__dict__()
         if self.bug is not None:
-            return {'animal': self.animal.__dict__(), 'bug': self.bug.__dict__(), 'timeStamp': self.timeStamp,
-                    'classification': self.classification}
-        else:
-            return {'animal': self.animal.__dict__(), 'timeStamp': self.timeStamp,
-                    'classification': self.classification}
+            result['bug'] = self.bug.__dict__()
+        result['timeStamp'] = self.timeStamp
+        result['classification'] = self.classification
+        return result
