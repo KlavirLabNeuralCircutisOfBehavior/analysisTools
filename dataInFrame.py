@@ -1,5 +1,5 @@
-from analysisTools.Point import Point
-from analysisTools.animal import Animal
+from Point import Point
+from animal import Animal
 
 
 class DataInFrame:
@@ -14,9 +14,15 @@ class DataInFrame:
         self.timeStamp = timeStamp
         self.classification = classification
 
+    def __str__(self):
+        return "timeStamp: " + str(
+            self.timeStamp) + " classification: " + str(self.classification) + " animal: " + str(
+            self.animal) + " bug: " + str(self.bug)
+
     def __dict__(self):
         if self.bug is not None:
             return {'animal': self.animal.__dict__(), 'bug': self.bug.__dict__(), 'timeStamp': self.timeStamp,
                     'classification': self.classification}
         else:
-            return {'animal': self.animal.__dict__(), 'timeStamp': self.timeStamp, 'classification': self.classification}
+            return {'animal': self.animal.__dict__(), 'timeStamp': self.timeStamp,
+                    'classification': self.classification}

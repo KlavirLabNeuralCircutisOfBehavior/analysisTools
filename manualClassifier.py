@@ -5,9 +5,9 @@ from time import sleep
 from pynput import keyboard
 import cv2
 
-from analysisTools.Point import Point
-from analysisTools.animal import Animal
-from analysisTools.dataInFrame import DataInFrame
+from Point import Point
+from animal import Animal
+from dataInFrame import DataInFrame
 
 
 def readFileRowToObject(fileName: str, lineNumber: int, desiredLikelihood=0.9) -> DataInFrame:
@@ -121,4 +121,5 @@ if __name__ == '__main__':
         print(userValue)
     with open(config['saveDictionaryPath'], 'w') as f:
         json.dump(userDictionary, f)
-    print("thank you, the results saved to "+config['saveResultsPath'] +" and the dictionary to " + config['saveDictionaryPath'])
+    print("thank you, the results saved to " + config['saveResultsPath'] + " and the dictionary to " + config[
+        'saveDictionaryPath'])

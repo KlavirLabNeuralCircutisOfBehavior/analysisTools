@@ -20,6 +20,10 @@ class Animal:
         return {'nose': self.nose.__dict__(), 'leftEar': self.leftEar.__dict__(), 'rightEar': self.rightEar.__dict__(),
                 'timeStamp': self.timeStamp, 'tail': self.tail.__dict__()}
 
+    def __str__(self):
+        return "nose: " + str(self.nose) + " leftEar: " + str(self.leftEar) + " rightEar: " + str(
+            self.rightEar) + " timeStamp: " + str(self.timeStamp) + " tail: " + str(self.tail)
+
     def __eq__(self, other):
         return (self.nose, self.leftEar, self.rightEar) == (other.nose, other.leftEar, other.rightEar)
 

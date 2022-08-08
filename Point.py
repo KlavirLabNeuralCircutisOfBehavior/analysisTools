@@ -16,6 +16,10 @@ class Point:
     def __dict__(self):
         return {'x': self.x, 'y': self.y, 'z': self.z, 'timeStamp': self.timeStamp, 'label': self.label}
 
+    def __str__(self):
+        return "x: " + str(self.x) + " y: " + str(self.y) + " z: " + str(self.z) + " timeStamp: " + str(
+            self.timeStamp) + " label: " + str(self.label)
+
     def __eq__(self, other):
         return (self.x, self.y, self.z) == (other.x, other.y, other.z)
 
