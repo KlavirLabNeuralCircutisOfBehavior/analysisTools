@@ -1,4 +1,5 @@
 import json
+from os import walk
 from typing import List
 
 from Point import Point
@@ -37,8 +38,10 @@ def readFileToObjectsList(fileName: str, desiredLikelihood=0.9) -> List[DataInFr
 if __name__ == "__main__":
     with open('config.json', 'r') as f:
         config = json.load(f)
-    dataSet = config['pathToDataSetCsv']
     desiredLikelihood = config['desiredLikelihood']
-    results = readFileToObjectsList(dataSet,desiredLikelihood)
-    with open(config['saveResultsPath'], 'w') as f:
-        json.dump([result.__dict__() for result in results], f)
+    dataSetsDir = "../datasets/exp4/"
+    for (dirpath, dirnames, filenames) in walk(dataSetsDir):
+        for dataSet in filenames:
+            results = readFileToObjectsList(dirpath+dataSet,desiredLikelihood)
+            with open("../datasets/exp4jsons/"+dataSet.split('.')[0]+".json", 'w') as f:
+                json.dump([result.__dict__() for result in results], f)
