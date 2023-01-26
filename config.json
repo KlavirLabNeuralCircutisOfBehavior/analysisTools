@@ -1,7 +1,7 @@
 {
-  "pathToDataSetCsv": "/home/tzuk/Documents/psychology/datasets/exp9fullData/bl10DLC_resnet50_exp7Feb16shuffle1_1030000.csv",
-  "videoPath": "../datasets/9/vids/21_2DLC_resnet50_exp7Feb16shuffle1_1030000_labeled.mp4",
-  "saveResultsPath": "../datasets/exp4jsons/results_week1_mice10.json",
-  "saveDictionaryPath": "../datasets/userDictionary_week21_mice6.json",
+  "pathToDataSetCsv": "/home/tzuk/Documents/psychology/datasets/leeAndShahaf/full_data/csv/Cage1Animal3Measure3Angle2DLC_resnet50_bsoid_dlcSep21shuffle1_1030000.csv",
+  "videoPath": "/home/tzuk/Documents/psychology/datasets/leeAndShahaf/full_data/videos/Cage1Animal3Measure3Angle2DLC_resnet50_bsoid_dlcSep21shuffle1_1030000_labeled.mp4",
+  "saveResultsPath": "../datasets/leeAndShahaf/results_cage1_animal3_angle2_measure3.json",
+  "saveDictionaryPath": "../datasets/userDictionary_cage1_animal3_angle2_measure3.json",
   "desiredLikelihood": 0.9
 }

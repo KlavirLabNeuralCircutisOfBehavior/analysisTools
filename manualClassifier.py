@@ -38,7 +38,7 @@ def readFileRowToObject(fileName: str, lineNumber: int, desiredLikelihood=0.9) -
 
 def on_press(key):
     global classification
-    classification = key.char
+    classification = key
 
 
 def on_release(key):
@@ -93,7 +93,7 @@ if __name__ == '__main__':
                 sleep(1)
                 userSignal = classification
                 while userSignal == '':
-                    sleep(0.1)
+                    #sleep(0.1)
                     userSignal = classification
             if userSignal == 'q':
                 break
